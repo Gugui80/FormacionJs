@@ -1,0 +1,33 @@
+<!--Funciones propias de los objetos. --> 
+<!DOCTYPE html > 
+<html>
+    <head>
+        <meta charset="utf-8"/>
+    </head>
+    <body>
+        <script type="text/javascript"> 
+            let evaluar = (notaParam) => {
+                if (notaParam >= 5) { 
+                    this.nota ='Aprobado'; 
+                } else 
+                    this.nota='Suspendido';
+            }
+
+            function CreaObjeto(nom,n) { 
+                this.nombre = nom; 
+                this.edad = n; 
+                this.asignarnota = evaluar; 
+            }
+             
+            var alumno = new CreaObjeto('Carlos',18); 
+            alumno.nota = 6; 
+            document.write('La nota de ' + alumno.nombre + ' es: ' + alumno.nota); //Muestra: La nota de Carlos es: 6
+            document.write('<br>'); 
+            alumno.asignarnota(8.5); //Llamamos al método asignar nota para que cambie su nota a: aprobado.
+            document.write('La nota ahora es: ' + alumno.nota + '<br>'); //Muestra: La nota de Carlos es: 6
+
+            //Utlizando la consola del navegador y los puntos de interrupción, solucionar el .bug por el cual la nota del alumno no se actualiz correctamente.
+        </script>
+    </body>
+</html>
+        

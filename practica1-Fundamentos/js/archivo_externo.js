@@ -1,0 +1,1 @@
+alert("Soy un archivo externo, incluído desde la etiqueta SCRIPT");

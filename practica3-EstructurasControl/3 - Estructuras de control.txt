@@ -1,0 +1,50 @@
+ESTRUCTURAS DE CONTROL
+Con ellas podemos realizar bloques de código condicionales y bucles
+
+BLOQUES CONDICIONALES
+Nos sirven para realizar unas acciones u otras en función del estado de las variables. Es decir, tomar decisiones para ejecutar unas instrucciones u otras dependiendo de lo 
+que esté ocurriendo en ese instante en nuestros programas. Tipos:
+1)IF (condicional que sirve para realizar unas u otras operaciones en función de una expresión)
+if (expresión) { 
+   //acciones a realizar en caso positivo 
+   //... 
+} else { 
+   //acciones a realizar en caso negativo 
+   //... 
+}
+2)SWITCH (permite hacer múltiples operaciones dependiendo del estado de una variable)
+switch (expresión) { 
+   	case valor1: 
+      	Sentencias a ejecutar si la expresión tiene como valor a valor1 
+      	break 
+   	case valor2: 
+      	Sentencias a ejecutar si la expresión tiene como valor a valor2 
+      	break 
+   	case valor3: 
+      	Sentencias a ejecutar si la expresión tiene como valor a valor3 
+      	break 
+   	default: 
+      	Sentencias a ejecutar si el valor no es ninguno de los anteriores 
+}
+
+BUCLES
+1)FOR
+Estos bucles se utilizan cuando queremos repetir la ejecución de unas sentencias un número definido de veces, siempre que se cumpla una condición.
+for (inicialización; condición; actualización) { 
+   	//sentencias a ejecutar en cada iteración 
+}
+2)WHILE
+Estos bucles se utilizan cuando queremos repetir la ejecución de unas sentencias un número indefinido de veces, siempre que se cumpla una condición.
+while (condición){ 
+   	//sentencias a ejecutar 
+}
+3)DO WHILE
+Al igual que el bucle WHILE, se utiliza cuando queremos repetir la ejecución de unas sentencias un número indefinido de veces, siempre que se cumpla una condición.
+No haremos ejemplos de este tipo de bucle dado su poco uso hoy en día en códigos productivos.
+do { 
+   	//sentencias del bucle 
+} 
+4)BREAK/CONTINUE
+se pueden usar en de las distintas estructuras de control y principalmente en los bucles, que te servirán para controlar dos tipos de situaciones:
+break: Significa detener la ejecución de un bucle y salirse de él.
+continue: Sirve para detener la iteración actual y volver al principio del bucle para realizar otra iteración, si corresponde.

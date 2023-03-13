@@ -1,0 +1,67 @@
+DEFINICIÓN => [ejercicio1.html]
+A la hora de hacer un programa ligeramente grande existen determinados procesos que se pueden concebir de forma independiente, y que son más sencillos de resolver 
+que el problema entero. Además, estos suelen ser realizados repetidas veces a lo largo de la ejecución del programa. Estos procesos se pueden agrupar en una función, 
+definida para que no tengamos que repetir una y otra vez ese código en nuestros scripts, sino que simplemente llamamos a la función y ella se encarga de hacer todo lo que debe.
+
+Así que podemos ver una función como una serie de instrucciones que englobamos dentro de un mismo proceso. Este proceso se podrá luego ejecutar desde cualquier otro sitio con 
+solo llamarlo. Por ejemplo, en una página web puede haber una función para cambiar el color del fondo y desde cualquier punto de la página podríamos llamarla para que 
+nos cambie el color cuando lo deseemos:
+
+function nombreFuncion (){ 
+   instrucciones de la función 
+   ... 
+}
+
+Primero se escribe la palabra function, reservada para este uso. Seguidamente se escribe el nombre de la función, que como los nombres de variables puede tener números, 
+letras y algún carácter adicional como en guión bajo. A continuación se colocan entre llaves las distintas instrucciones de la función.
+
+INVOCAR FUNCIONES
+Para ejecutar una función la tenemos que invocar en cualquier parte de la página. Con eso conseguiremos que se ejecuten todas las instrucciones que tiene la función 
+entre las dos llaves. Utilizando el ejemplo de arriba:
+
+nombreFuncion();
+
+PARÁMETROS
+Son los valores de entrada que recibe una función. Puede recibir entre 0 y n parámetros.
+
+function nombreFuncion (parametroA, parametroB ...){ 
+   instrucciones de la función 
+   ... 
+}
+
+SENTENCIA RETURN => [ejercicio2.html]
+Para especificar el valor que retornará la función se utiliza la palabra return seguida de el valor que se desea devolver. Es la salida de la función. A las funciones que 
+tienen sentencia return se las conoce como funciones propiamente dichas. A las que carecen de esta sentencia se las conoce como procedimientos, aunque se definan e invoquen de la 
+misma forma y con la misma estructura. Aunque sólo podamos devolver un dato, en una misma función podemos colocar más de un return.
+
+function nombreFuncion (){ 
+   instrucciones de la función 
+   ...
+   return valorDevuelto
+}
+
+FUNCIONES NATIVAS DE JAVASCRIPT
+eval(string)
+Esta función recibe una cadena de caracteres y la ejecuta como si fuera una sentencia de Javascript.
+
+parseInt(cadena,base)
+Recibe una cadena y una base. Devuelve un valor numérico resultante de convertir la cadena en un número en la base indicada.
+
+parseFloat(cadena)
+Convierte la cadena en un número y lo devuelve.
+
+escape(carácter)
+Devuelve un el carácter que recibe por parámetro en una codificación ISO Latin 1.
+
+unescape(carácter)
+Hace exatamente lo opuesto a la función escape.
+
+isNaN(número)
+Devuelve un boleano dependiendo de lo que recibe por parámetro. Si no es un número devuelve un true, si es un numero devuelve false.
+
+ARROW FUNCTIONS
+Desde hace algunos años, la manera de definir funciones ha sido mejorada. Se pueden definir e invocar de la siguiente forma:
+
+let miFuncion = (param1, param2) => {
+   //Codigo a ejecutar en la funcion.
+}

@@ -1,0 +1,57 @@
+OBJETOS => [ejercicio1.html]
+Los objetos son una herramienta de lenguajes de programación en la que se unen dos cosas fundamentales: los datos y la funcionalidad. Los objetos tienen:
+Propiedades: En los objetos las propiedades se refieren a los datos.
+Métodos: En objetos, los métodos se refieren a la funcionalidad.
+El acceso a las propiedades y métodos de los objetos se hace con el operador punto ("."). Las propiedades se separan por comas y se coloca siempre el nombre de la propiedad, 
+el caracter ":" y luego el valor de la propiedad.
+
+miObjeto = {
+    propiedad1: valor1,
+    metodo1: funcion1(parametro1,parametro2)
+};
+miObjeto.propiedad1
+miObjeto.metodo1(val1,val2)
+
+NOTA: Lo que conozcas de JSON lo puedes aplicar al mundo de Javascript inmediatamente. De hecho, si has tenido ocasión de trabajar con este formato desde Javascript, 
+habrás comprobado que en la mayoría de los casos puedes volcar un objeto JSON en una variable Javascript e inmediatamente trabajar con él como si fuera un objeto que tienes 
+en la memoria.
+
+IMPORTANTE: A partir de este punto vamos a utilizar, en muchas ocasiones, como salida de los ejercicios, la consola del navegador. La sentencia console.log(string) nos da una ventana
+muy dinámica para observar las ejecuciones en distintos puntos de la aplicación. Para ello, no necesitamos más que pulsar la tecla f12, y después la pestaña concole, del navegador,
+y observar las distintas salidas de nuestros ejercicios.
+
+CONSTRUCTORES => [ejercicio1.html]
+Utiliza la palabra this para declarar las propiedades y métodos del objeto que se está construyendo. This hace referencia al objeto que se está construyendo, pues recordemos 
+que a esta función la llamaremos para construir un objeto. A ese objeto que se está construyendo le vamos asignando valores en sus propiedades y también le vamos asignando 
+nombres de funciones definidas para sus métodos. Al construir un objeto técnicamente es lo mismo declarar una propiedad o un método, solo difiere en que a una propiedad le 
+asignamos un valor y a un método le asignamos una función.
+
+function MiClase (valor_inicializacion){ 
+   	//Inicializo las propiedades y métodos 
+   	this.miPropiedad = valor_inicializacion 
+   	this.miMetodo = nombre_de_una_funcion_definida 
+}
+
+BUCLE FOR ... IN => [ejercicio2.html]
+En Javascript hay una construcción especial del bucle for de toda la vida, que te permite recorrer todas las propiedades de un objeto. Es parecido a lo que en otros lenguajes 
+tenemos en el bucle foreach (Javascript también tiene el forEach pero es solo para arrays y no es un bucle sino un método de arrays, que sirve para iterar, pero no es una 
+estructura de control como tal). Su sintaxis es la siguiente:
+
+for (var propiedad in objeto){
+	// código a repetir por el bucle.
+	// dentro de este código la variable "propiedad" contiene la propiedad actual
+    // actual en cada uno de los pasos de la iteración.
+}
+
+THIS => [ejercicio2.html]
+This es el contexto de una función. Una de las cosas interesantes de Javascript y muy potentes es que el contexto se puede modificar y depende de como se invoca esa función. 
+El valor de "this" dentro de una función no depende de cómo se define esa función, sino de cómo se invoca.
+
+OBJETOS NATIVOS EN JAVASCRIPT
+String, para el trabajo con cadenas de caracteres. => https://desarrolloweb.com/articulos/objetos-string-javascript.html
+Date, para el trabajo con fechas. => https://desarrolloweb.com/articulos/clase-date-javascript.html
+Math, para realizar funciones matemáticas. => https://desarrolloweb.com/articulos/762.php
+Number, para realizar algunas cosas con números => https://desarrolloweb.com/articulos/778.php
+Boolean, trabajo con boleanos. => https://desarrolloweb.com/articulos/777.php
+Array, ya los hemos visto anteriormente.
+RegExp, que sirve para construir patrones.

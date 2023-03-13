@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <html>
+     <head>
+        <title>Ejemplo getElementById </title>
+    </head>
+    <body>
+        <p id="informacion">Curso de JS IGAE</p>
+        <button onclick="cambiaColor('blue');">azul</button>
+        <button onclick="cambiaColor('red');">rojo</button>
+
+        <p id="practica"><span id="iconoPractica">Icono</span>Párrafo 2</p>
+        <script>
+            cambiaColor = (nombreColor) => { 
+                let obj = document.getElementById("informacion"); 
+                obj.style.backgroundColor = nombreColor;
+            }
+            //Añadir al ejercicio otra función, donde demos estilos al párrafo "practica" y el span "icono" utilizando document.getElementById.
+            //Los estilos que se den serán libre. Desde el curso recomendamos poner bordes, y cambiar la fuente de los textos.
+        </script>
+    </body>
+ </html>

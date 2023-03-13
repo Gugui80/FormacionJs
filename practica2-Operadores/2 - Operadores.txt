@@ -1,0 +1,40 @@
+OPERADORES EN JAVASCRIPT 
+Los operadores sirven para hacer los cálculos y operaciones necesarios para llevar a cabo los objetivos de cualquier aplicación.
+Tipos de operadores:
+
+1)ARITMÉTICOS => [ejercicio1.html]
++ Suma de dos valores. En el caso de que algún valor sea una cadena de texto, este operador concatena ambos valore.
+- Resta de dos valores, también puede utilizarse para cambiar el signo de un número si lo utilizamos con un solo operando -23
+* Multiplicación de dos valores
+/ División de dos valores
+% El resto de la división de dos números (3%2 devolvería 1, el resto de dividir 3 entre 2)
+++ Incremento en una unidad, se utiliza con un solo operando
+-- Decremento en una unidad, utilizado con un solo operando
+
+2)ASIGNACIÓN => [ejercicio1.html]
+= Asignación. Asigna la parte de la derecha del igual a la parte de la izquierda.
++= Asignación con suma. Realiza la suma de la parte de la derecha con la de la izquierda y guarda el resultado en la parte de la izquierda.
+-= Asignación con resta
+*= Asignación de la multiplicación
+/= Asignación de la división
+%= Se obtiene el resto y se asigna
+
+3)LÓGICOS => [ejercicio1.html] (Los operadores lógicos relacionan los operandos boleanos para dar como resultado otro operando boleano)
+&& Devuelve true si las instrucciones a izquierda y derecha son true. En el resto de casos devuelve false.
+|| Devuelve true si una de las instrucciones a izquierda y derecha es true. En el resto de casos devuelve false.
+! Operador de negación. Transforma true en false y viceversa.
+
+4)CONDICIONALES => [ejercicio1.html]
+== Comprueba si dos valores son iguales
+!= Comprueba si dos valores son distintos
+> Mayor que, devuelve true si el primer operando es mayor que el segundo
+< Menor que, es true cuando el elemento de la izquierda es menor que el de la derecha
+>= Mayor igual
+<= Menor igual
+
+5)TERNARIO => [ejercicio2.html] (La "expresion_condicional" será la que se evalue, positiva o negativamente. "expresion1" se ejecutará en caso que sea positiva y "expresion2" 
+se ejecutará si era negativa)
+expresión_condicional ? expresion1 : expresion2;
+
+6)TYPEOF => [ejercicio2.html] (Devuelve una cadena de texto que describe el tipo del operador que estamos comprobando)
+typeof expresion1

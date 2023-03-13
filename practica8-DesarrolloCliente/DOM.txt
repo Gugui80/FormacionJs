@@ -1,0 +1,21 @@
+DESARROLLO DEL LADO DEL CLIENTE
+En esta parte vamos a tratar de explicar todos los recursos con los que cuenta un programador de Javascript y con los que puede crear todo tipo de efectos y aplicaciones. 
+Los objetivos cubrirán aspectos diversos de Javascript dentro del navegador, lo que hoy conocemos como desarrollo frontend, en asuntos como:
+1)Jerarquía de objetos del navegador (DOM)
+2)Trabajo con formularios
+3)Eventos
+
+DOM (Document Object Model o modelo de objetos del navegador)
+Por medio del DOM podremos controlar al navegador en general y a los distintos elementos que se encuentran en la página. Cualquier elemento de la página se puede controlar 
+de una manera u otra accediendo a esa jerarquía.
+
+OBJETO WINDOW => [ejercicio2.html]
+Es el objeto principal en la jerarquía y contiene las propiedades y métodos para controlar la ventana del navegador. De él dependen todos los demás objetos de la jerarquía. 
+Vamos a ver la lista de sus propiedades y métodos más utilizados (Para no hacer este documento inñutilmente largo, y dado que el objeto window tiene multitud de atributos y
+métodos, muchos de ellos con una tasa muy baja de utilización en proyectos reales, dejaremos 2 links con las referencias a los listados de los mismos):
+1)Atributos: https://desarrolloweb.com/articulos/826.php
+2)Métodos: https://desarrolloweb.com/articulos/827.php
+
+
+
+

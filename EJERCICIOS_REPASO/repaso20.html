@@ -1,0 +1,27 @@
+<!--Mismo programa que el ejercicio 19, implementado con sentencia condicional switch-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <script>
+        let dia,mes,año;
+        mes=prompt('Introduzca el número del mes:','');
+        mes=parseInt(mes);
+        console.log(mes)
+        switch(mes) {
+            case 1, 3, 5, 7, 8, 10, 12:
+                document.write('Este mes tiene 31 dias.');
+                break;
+            case 2:
+                document.write('Este mes tiene 29 días.');
+                break;
+            default:
+                document.write('Este mes tiene 30 dias.');
+                break;
+        }
+        //Como se puede comprobar, cuando la selección en una variable es sobre muchos valores, la sentencia  switch es más que recomendable tanto por claridad de código como
+        // por número de líneas.
+
+    </script>
+</html> 

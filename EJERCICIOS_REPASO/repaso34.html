@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <form name="calculadora">
+            Primer número: <input type="text" name="valor1"><br>
+            Segundo número: <input type="text" name="valor2"><br>
+            <input type="button" name="button1" value="sumar" onclick="calcular('suma')">
+            <input type="button" name="button2" value="restar" onclick="calcular('resta')">
+            <input type="button" name="button3" value="multiplicar" onclick="calcular('producto')">
+            <input type="button" name="button4" value="dividir" onclick="calcular('division')"><br>
+            Resultado: <input type="text" name="resultado">
+        </form>
+        <script>
+            calcular = (operacion) => {
+                console.log(operacion)
+            }
+            //Basándonos en el ejercicio: repaso33.html, implementar con la función "calcular", toda la lógica de la calculadora, utilizando estructuras de control
+        </script>
+    </body>
+</html>

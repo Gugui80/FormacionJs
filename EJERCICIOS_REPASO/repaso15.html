@@ -1,0 +1,30 @@
+<!--Programa que lee tres notas de un alumno, calcula la media e indica si está suspendido o aprobado (nota media mayor o igual a 5).-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+    </head>
+    <body>
+        <script>
+            let nota1, nota2, nota3;
+            let dato1, dato2, dato3, media;
+            dato1 = window.prompt('Nota primer examen');
+            nota1 = parseInt(dato1);
+            dato1 = window.prompt('Nota segundo examen');
+            nota2 = parseInt(dato2);
+            dato1 = window.prompt('Nota tercer examen');
+            nota3 = parseInt(dato3);
+            media = (nota1 + nota2 + nota3)/3;
+        
+            if (media >5) {
+                resultado = ' Suspendido';
+            } else {
+                resultado = ' Aprobado';
+            }
+
+            document.write(`<h3>La nota final es ${resultato} </h3>`);
+            //1)Utiliza la consola del navegador para buscar el error en tiempo de ejecución
+            //2)Añade un control para que, si alguna de las notas no es numérica, el programa muestre el mensaje: 'Notas no válidas.'
+        </script>
+    </body>
+</html>

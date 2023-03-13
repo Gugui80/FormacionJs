@@ -1,0 +1,44 @@
+ARRAYS
+Son estructuras de datos que se almacenan en posiciones consecutivas de memoria.
+Los arrays nos permiten guardar varias variables y acceder a ellas de manera independiente, es como tener una variable con distintos compartimentos donde podemos introducir datos 
+distintos. Para ello utilizamos un índice que nos permite especificar el compartimiento o posición a la que nos estamos refiriendo.
+
+var primerArray = new Array();
+var primerArray = [];
+
+Los arrays en Javascript empiezan siempre en la posición 0, así que un array que tenga por ejemplo 10 posiciones, tendrá casillas de la 0 a la 9. Para recoger datos de un 
+array lo hacemos igual: poniendo entre corchetes el índice de la posición a la que queremos acceder. En los espacios de memoria de los arrays podemos guardar datos de cualquier 
+tipo de dato, aunque no sean del mismo.
+
+Todos los arrays en javascript, aparte de almacenar el valor de cada una de sus casillas, también almacenan el número de posiciones que tienen. Para ello utilizan la propiedad length
+del objeto array. Para acceder a una propiedad de un objeto se ha de utilizar el operador punto. Se escribe el nombre del array que queremos acceder al número de posiciones que tiene,
+sin corchetes ni paréntesis, seguido de un punto y la palabra length.
+
+primerArray.length;
+
+MÉTODOS DEL OBJETO ARRAYS
+1)map() : Permite recorrer el array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original.
+2)filter() : Recorre el array y retorna un nuevo array con aquellos elementos que pasen una determinada condición.
+3)forEach() : Permite iterar el contenido de un array. Recibe un callback que toma como parámetro el elemento actual de la iteración y el indice del mismo.
+4)find() : Recorre el array y retorna la primera coincidencia del elemento que se busca.
+5)sort() : Ordena los elementos del array y retorna el arreglo ordenado. Los elementos se ordenarán en orden ascendente (de la A a la Z) por defecto.
+6)some() : Itera el array y retorna un booleano si como mínimo uno de los elementos presentes en el array pasa una condición determinada.
+7)every() : Es similar al some(), ya que itera el array y retorna un booleano. Para que dicho booleano sea true todos los elementos del array deberán pasar la condición dada.
+8)concat() : Se utiliza para unir dos o más arrays. Este método no cambia los arrays existentes, sino que devuelve un nuevo array.
+9)includes() : Determina si un array incluye un determinado elemento y retorna un booleano según corresponda.
+10)join() : Une todos los elementos de un array en una cadena. Podemos pasarle como parámetro el carácter de separación que debe agregar entre los elementos.
+11)reduce() : Aplica una función a un acumulador y a cada valor de una array (de izquierda a derecha) para reducirlo a un único valor.
+12)indexOf() : Retorna el primer índice en el que se puede encontrar un elemento dado en el array, ó retorna -1 si el elemento no esta presente.
+13)findIndex() : Retorna el índice del primer elemento de un array que cumpla con la función de prueba proporcionada. En caso contrario devuelve -1.
+14)fill() : Cambia todos los elementos de un array por un valor estático, desde el índice de inicio hasta el índice final. Retorna el array modificado.
+15)push() : Añade uno o más elementos al final de un array y devuelve la nueva longitud del array.
+16)pop() : Elimina el último elemento de un array y lo devuelve. Este método cambia la longitud del array.
+17)shift() : Elimina el primer elemento del array y lo retorna. Este método modifica la longitud del array.
+18)unshift() : Agrega uno o más elementos al inicio del array, y devuelve la nueva longitud del array.
+19)slice() : Devuelve una copia de una parte del array dentro de un nuevo array empezando por inicio hasta fin (fin no incluido). El array original no se modificará.
+20)reverse() : Invierte el orden de los elementos de un array. El primer elemento pasa a ser el último y el último pasa a ser el primero.
+21)splice() : Cambia el contenido de un array eliminando elementos existentes y/o agregando nuevos elementos.
+22)lastIndexOf() : Busca un elemento en un array y devuelve su posición. Comienza buscando por el final del array. Retorna -1 si el elemento no se encontrara.
+23)flat() : Crea una nuevo array con todos los elementos de sub-array concatenados recursivamente hasta la profundidad especificada.
+24)isArray() : Determina si el valor pasado es un Array.
+25)from() : Crea una nueva instancia de Array a partir de un objeto iterable.

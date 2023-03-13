@@ -1,0 +1,23 @@
+<!--Ejecución dinámica de scripts-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>scriptins básicos</title>
+</head>
+<body>
+    <h1>Práctica 1</h1>
+    <span id="mielemento">Pasa el ratón por aquí</span>
+    <script>
+      var pasadas = 0;
+      function anunciarPasadas() {
+        pasadas = pasadas + 1;
+        alert('Has pasado el ratón encima ' + pasadas + ' veces');
+      } 
+      document.getElementById('mielemento').addEventListener('mouseenter', anunciarPasadas);
+    </script>
+</body>
+</html>
