@@ -1,5 +1,4 @@
-## FormacionJs
-Formación para equipo IGAE
+## Formación de JavaScript(IGAE)
 
 FUNDAMENTOS
 
