@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+  <script src="js/init.js"></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="TO-DO List" />
@@ -17,9 +18,16 @@
         <h1>IGAE to-dos</h1>
 
         <input type="text" id="nuevo-todo" placeholder="Nueva tarea">
+        <!--<button onclick="addTodo(event)">Añadir</button>-->
       </header>
+
+      <section id="main">
+        <ol id="todo-list">
+          
+        </ol>
+      </section>
     </section>
-    <footer if="info_todo">
+    <footer id="info_todo">
 
     </footer>
 </body>

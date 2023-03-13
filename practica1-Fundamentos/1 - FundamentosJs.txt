@@ -11,7 +11,7 @@ modularizar el código en distintos ficheros (scripts). Para incorporarlos, lo h
 Este archivo externo debe contener tan solo sentencias Javascript. No debemos incluir código HTML de ningún tipo, ni tan siquiera las etiquetas SCRIPT.
 A nivel didáctico en esta formación usaremos mucho la práctica de incluir el código Javascript dentro del propio documento HTML. Es algo muy cómodo para expresar 
 pequeños ejemplos Javascript. Sin embargo, a nivel profesional no es una práctica aconsejable, sino que la recomendación es colocar todo, o la mayoría de tu código Javascript en 
-archivos ".js" que incluyas de manera externa. 
+archivos ".js" que se incluyan de manera externa. 
 Existen varios motivos para recomendar esta práctica, entre los cuales podemos destacar:
 -Desde el punto de vista de la separación del código, cada archivo debería tener solo un lenguaje. Los documentos HTML se colocan en archivos ".html", los documentos CSS en 
 archivos ".css" y el Javascript también separado en sus archivos ".js".

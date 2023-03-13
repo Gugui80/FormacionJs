@@ -21,6 +21,7 @@ OBJETO DOCUMENT => [ejercicio3.html]
 Con el objeto document se controla la página web y todos los elementos que contiene. El objeto document es la página actual que se está visualizando en ese momento. 
 Depende del objeto window, pero también puede depender del objeto frame en caso de que la página se está mostrando en un frame. 
 Métodos más utilizados del objeto DOCUMENT:
+addEventListener(event, callback): Permite añadir un manejador a cualquier evento del navegador que tenga definido la etiqueta html en cuestión.
 getElementById(id): Busca el elemento HTML con el id id. Si no lo encuentra devuelve NULL.
 getElementsByClassName(class): Busca elementos con la clase class. Si no lo encuentra devuelve [].
 getElementsByName(name): Busca elementos con atributo name name. Si no lo encuentra devuelve [].

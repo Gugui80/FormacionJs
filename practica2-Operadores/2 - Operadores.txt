@@ -25,8 +25,9 @@ Tipos de operadores:
 ! Operador de negación. Transforma true en false y viceversa.
 
 4)CONDICIONALES => [ejercicio1.html]
-== Comprueba si dos valores son iguales
+== Comprueba si dos valores son iguales (Los dobles iguales no comprueban el tipo de dato variable/valor mientras se hace la comparación)
 != Comprueba si dos valores son distintos
+=== Comprueba si dos valores son iguales (Triple igual comprueba el tipo de datos de una variable durante la comparación)
 > Mayor que, devuelve true si el primer operando es mayor que el segundo
 < Menor que, es true cuando el elemento de la izquierda es menor que el de la derecha
 >= Mayor igual

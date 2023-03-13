@@ -18,18 +18,6 @@ Para utilizar JS del lado del servidor, nació NodeJS. Con él, podemos programa
 ejecutan directamente sobre el sistema operativo y que son capaces de resolver cualquier tipo de problema. En el caso de
 COFFEE-MRR lo utilizaremos para automatización, optimización y despliegue de aplicaciones.
 
-SINGLE PAGE APLICATIONS
-Conocidas también con sus siglas SPA, el servidor suele entregar solamente los datos de negocio en crudo y el navegador
-hace todo el trabajo de presentar esos datos en un formato adecuado (en el navegador se produce el HTML para representar 
-esos datos). Pero lo que más caracteriza a una SPA es que la navegación se realiza siempre dentro de la misma página y 
-Javascript se encarga de presentar una u otra pantalla al usuario sin tener que recargar todo el conjunto de la página.
-
-Los dos principales factores que caracterizan las SPA son los siguientes:
-
-1)El hecho de traer del servidor los datos en crudo (más ligeros, con menor consumo de transferencia y mayor velocidad).
-2)Toda la navegación se realiza dentro del mismo documento, producen aplicaciones web de una respuesta muy rápida, 
-aportando una experiencia de uso cercana a la de una aplicación de escritorio.
-
 JAVA Y JAVASCRIPT
 Javascript se llamó así porque Netscape (el navegador que lanzó Javascript), que estaba aliado a los creadores de Java 
 en la época (Sun Microsystems), quiso aprovechar la imagen de marca y la popularidad de Java, como maniobra para la 
@@ -43,9 +31,21 @@ de la aplicación).
 4)JavaScript es de código abierto y Java tiene propietario (Oracle).
 5)La complejidad y ribustez de Java hacen que se necesite una formación mucho más intensa para iniciarse.
 
-QUE NECESITO PARA TRAJAR CON JAVASCRIPT?
+QUE NECESITO PARA TRABAJAR CON JAVASCRIPT?
 Un editor (VSCode es el más potente y utilizado hoy en día) y un navegador. Además es necesario tenes conocimientos de HTML5
 y CSS, así como de Programación Orientada a objetos para poder aprovechar todo el stack que Javascript nos brinda en la web.
+
+SINGLE PAGE APLICATIONS
+Conocidas también con sus siglas SPA, el servidor suele entregar solamente los datos de negocio en crudo y el navegador
+hace todo el trabajo de presentar esos datos en un formato adecuado (en el navegador se produce el HTML para representar 
+esos datos). Pero lo que más caracteriza a una SPA es que la navegación se realiza siempre dentro de la misma página y 
+Javascript se encarga de presentar una u otra pantalla al usuario sin tener que recargar todo el conjunto de la página.
+
+Los dos principales factores que caracterizan las SPA son los siguientes:
+
+1)El hecho de traer del servidor los datos en crudo (más ligeros, con menor consumo de transferencia y mayor velocidad).
+2)Toda la navegación se realiza dentro del mismo documento, producen aplicaciones web de una respuesta muy rápida, 
+aportando una experiencia de uso cercana a la de una aplicación de escritorio.
 
 ESTÁNDAR ECMASCript (ECMA = European Computer Manufacturers Association)
 A medida que las exigencias de los desarrolladores han crecido en cuanto a la complejidad de las aplicaciones desarroldas
@@ -62,6 +62,15 @@ window.alert("Bienvenido a mi sitio web. Gracias...")
 document.write(new Date())
 <input type=button value=Atrás onclick="history.go(-1)">
 </script>
+
+CONSOLA DEL NAVEGADOR Y SUSU HERRAMIENTAS
+Pulsa f12 y empieza :)
+
+SINTAXIS DEL LENGUAJE
+Hay 3 conceptos iniciales importantes que hay que conocer en javascript:
+1)Js es caseSensitive, distingue entre mayúsculas y minúsculas en la declaración de nuestras variables y fucniones.
+2)Comentarios: Todo código precedido de //, ó encerrado entre /* */ será interpretado como comentario, nunca ejecutado.
+3)Separación de instrucciones: En JavaScript, tanto el punto y coma ';' como el salto de línea son válidos para separar sentencias.
 
 IMPORTANTE
 A partir de este momento, el curso será estructurado en prácticas. Cada una de ellas esta contenida en un directorio que contiene:

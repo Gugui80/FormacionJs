@@ -46,3 +46,17 @@ document.write(comparacionDeCondiciones + '<br>')
 comparacionDeCondiciones = 3 >= 5 //devuelve false
 document.write(comparacionDeCondiciones + '<br>')
 
+//DIFERENCIAS ENTRE DOBLE Y TRIPLE IGUAL
+let foo = "prueba" 
+let bar = "prueba"  
+console.log(foo == bar) //true
+console.log(foo === bar) //true
+
+const numero = 1234 
+const numeroComoCadenaDeTexto = '1234'  
+console.log(numero == numeroComoCadenaDeTexto) //true
+console.log(numero === numeroComoCadenaDeTexto)  //false
+
+console.log(0 == false) //true - Esto ocurre por que Js transforma el 0 a false
+console.log(0 === false) //false - Aquí también se transforma el 0 a false, pero como no son del mismo tipo, la comparación es falsa
+

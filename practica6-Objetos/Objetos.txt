@@ -1,3 +1,5 @@
+AÑADIR .prototype a la documentación
+
 OBJETOS => [ejercicio1.html]
 Los objetos son una herramienta de lenguajes de programación en la que se unen dos cosas fundamentales: los datos y la funcionalidad. Los objetos tienen:
 Propiedades: En los objetos las propiedades se refieren a los datos.
