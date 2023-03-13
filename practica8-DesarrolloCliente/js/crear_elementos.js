@@ -14,3 +14,4 @@ imgExample.src = 'img/logo.png'; //Ojo con la ruta de la imagen. Hay que referen
 imgExample.alt = 'Primera imagen generada en el DOM';
 
 container.appendChild(imgExample);
+

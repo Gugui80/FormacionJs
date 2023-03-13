@@ -11,3 +11,8 @@ div.removeAttribute("id") + "<br>";
 document.write(div.getAttributeNames() + "<br>"); // class="info data dark" y data-number="5"
 div.setAttribute("id", "pagina2") + "<br>";   
 document.write(div.getAttribute("id") + "<br>"); ; // Añader id="pagina2"
+
+//Propiedades innerHtml y textContent
+let div_example = document.querySelector(".info");
+console.log(div_example.textContent); //Muestra: Hola mundo!!
+console.log(div.innerHTML); //Muestra: <b>Hola</b> mundo!!
