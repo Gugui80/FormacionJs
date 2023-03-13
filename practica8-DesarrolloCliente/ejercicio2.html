@@ -12,21 +12,21 @@
     <body>
         <h1>Práctica 8: Objeto Window</h1>
         <form> 
-            <!--Al pulsar el botón, navegaremos a la URL de Hacienda-->
-            <input type="Button" value="Pulsame para ir a la página de hacienda!" onclick="window.location='https://www.hacienda.gob.es/es-ES/Paginas/Home.aspx'">
-            <br> 
-            <br> 
-            <!--Al pulsar el botón, utilizamos el método imprimir del objeto Window-->
-            <input type="button" value="Imprimir esta página" onClick="print()"> 
-            </form>
-            <script> 
-                let nombre = null;
+        <!--Al pulsar el botón, navegaremos a la URL de Hacienda-->
+        <input type="Button" value="Pulsame para ir a la página de hacienda!" onclick="window.location='https://www.hacienda.gob.es/es-ES/Paginas/Home.aspx'">
+        <br> 
+        <br> 
+        <!--Al pulsar el botón, utilizamos el método imprimir del objeto Window-->
+        <input type="button" value="Imprimir esta página" onClick="print()"> 
+        </form>
+        <script> 
+            let nombre = null;
 
-                while (nombre == null || nombre == "") { 
-                    nombre = prompt("Dime tu nombre:","");
-                }
+            while (nombre == null || nombre == "") { 
+                nombre = prompt("Dime tu nombre:","");
+            }
 
-                document.write("<h1>Hola " + nombre + "</h1>") ;
-            </script>
+            document.write("<h1>Hola " + nombre + "</h1>") ;
+        </script>
     </body>
 </html>
