@@ -35,7 +35,7 @@ QUE NECESITO PARA TRABAJAR CON JAVASCRIPT?
 Un editor (VSCode es el más potente y utilizado hoy en día) y un navegador. Además es necesario tenes conocimientos de HTML5
 y CSS, así como de Programación Orientada a objetos para poder aprovechar todo el stack que Javascript nos brinda en la web.
 
-SINGLE PAGE APLICATIONS
+OBJETIVO - SINGLE PAGE APLICATIONS
 Conocidas también con sus siglas SPA, el servidor suele entregar solamente los datos de negocio en crudo y el navegador
 hace todo el trabajo de presentar esos datos en un formato adecuado (en el navegador se produce el HTML para representar 
 esos datos). Pero lo que más caracteriza a una SPA es que la navegación se realiza siempre dentro de la misma página y 
@@ -68,7 +68,7 @@ Pulsa f12 y empieza :)
 
 SINTAXIS DEL LENGUAJE
 Hay 3 conceptos iniciales importantes que hay que conocer en javascript:
-1)Js es caseSensitive, distingue entre mayúsculas y minúsculas en la declaración de nuestras variables y fucniones.
+1)Js es caseSensitive, distingue entre mayúsculas y minúsculas en la declaración de nuestras variables y funciones.
 2)Comentarios: Todo código precedido de //, ó encerrado entre /* */ será interpretado como comentario, nunca ejecutado.
 3)Separación de instrucciones: En JavaScript, tanto el punto y coma ';' como el salto de línea son válidos para separar sentencias.
 

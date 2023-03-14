@@ -13,15 +13,19 @@ A nivel didáctico en esta formación usaremos mucho la práctica de incluir el 
 pequeños ejemplos Javascript. Sin embargo, a nivel profesional no es una práctica aconsejable, sino que la recomendación es colocar todo, o la mayoría de tu código Javascript en 
 archivos ".js" que se incluyan de manera externa. 
 Existen varios motivos para recomendar esta práctica, entre los cuales podemos destacar:
--Desde el punto de vista de la separación del código, cada archivo debería tener solo un lenguaje. Los documentos HTML se colocan en archivos ".html", los documentos CSS en 
+1)Desde el punto de vista de la separación del código, cada archivo debería tener solo un lenguaje. Los documentos HTML se colocan en archivos ".html", los documentos CSS en 
 archivos ".css" y el Javascript también separado en sus archivos ".js".
--El archivo externo permite que el navegador lo cachee, de modo que cuando la página se vuelve a visitar, el código ya se encuentra en el navegador y no lo tiene que volver a 
+2)El archivo externo permite que el navegador lo cachee, de modo que cuando la página se vuelve a visitar, el código ya se encuentra en el navegador y no lo tiene que volver a 
 descargar. Este punto es especialmente importante cuando tenemos muchas páginas que cargan el mismo código Javascript, ya que el navegador realemnte descargará una vez el 
 archivo ".js" y las demás veces lo consumirá desde la caché, ahorrando transferencia y aumentando la velocidad de carga.
--Cuando tengas más nociones avanzadas sobre Javascript verás que en la etiqueta script puedes usar atributos como "defer" o "async". Ambos atributos provocan que 
+3)Cuando tengas más nociones avanzadas sobre Javascript verás que en la etiqueta script puedes usar atributos como "defer" o "async". Ambos atributos provocan que 
 el navegador no se detenga a ejecutar un script externo que se encuentre en medio del contenido HTML, sino que siga analizando la página y renderizando su contenido mientras 
 que el archivo se descarga. Por tanto, ambos atributos optimizan la carga de la página y mejoran la velocidad con la que el navegador presenta el 
-contenido al usuario => [ejercicio4.html]
+contenido al usuario 
+El atributo DEFER indica al navegador que no espere por el script. En lugar de ello, debe seguir procesando el HTML, construir el DOM. El script carga “en segundo plano” y 
+se ejecuta cuando el DOM esta completo => [ejercicio4.html, ejercicio7.html, ejercicio8.html]
+Los scripts ASYNC cargan en segundo plano y se ejecutan cuando están listos. El DOM y otros scripts no esperan por ellos, y ellos no esperan por nada. Un script totalmente 
+independiente que se ejecuta en cuanto se ha cargado.
 
 VARIABLES
 Una variable es un espacio en memoria donde se almacena un dato. Los nombres de las variables han de construirse con caracteres alfanuméricos (números y letras), el carácter subrayado 
@@ -30,6 +34,7 @@ Hay 3 formas de declarar variables en JS:
 var => pueden ser inicializadas, re-declaradas y modificadas a lo largo de la ejecución.
 let => pueden ser inicializadas y modificadas a lo largo de la ejecución. No pueden ser re-declaradas.
 const => DEBEN ser inicializadas. No puedenn re-declaradas ni modificadas a lo largo de la ejecución.
+Sin palabra reservada.
 (let y const existen desde el ES6(ECMAScript6).)
 
 Ámbito de una variable => [ejercicio5.html]
@@ -43,7 +48,7 @@ acceder a ellas dentro del lugar donde se ha declarado, es decir, si la habíamo
 Relaciona con el lugar de la declaración de una variable, debemos conocer uno de los conceptos más importantes, peligroso y a la vez potente que tiene JS: LAS CLOSURES
 Tienes una closure cuando una función cualquiera accede a una variable fuera de su contexto.
 
-TIPOS DE DATOS EN JAVASCRIPT
+TIPOS DE DATOS EN JAVASCRIPT => [ejercicio6.html, ejercicio7.html]
 JavaScript es capaz de almacenar 6 tipos de datos: 
  - boolean, para los datos boleanos. (True o false)
  - number, para los numéricos.
@@ -51,6 +56,7 @@ JavaScript es capaz de almacenar 6 tipos de datos:
  - object, para los objetos.
  - function, para las funciones.
  - undefined, para variables declaradas a las que no se les ha asignado valores.
+ Importante -> Buscar documentación sobre null en js.
 Las variable, como indicamos antes, no están tipadas, y pueden almacenar distintos tipos de datos a lo largo de la ejecución. Es responsabilidad del desarrollador
 la correcta gestión de lo que se almacena en cada momento en una variable. => [ejercicio6.html]
 

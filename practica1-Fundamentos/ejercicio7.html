@@ -9,14 +9,11 @@
   <title>Inclusión de archivos externos</title>
 </head>
 <body>
-    <h1>Práctica 1: Inclusión de archivos externos en diferido.</h1>
-    <input type=button value=Atrás onclick="history.go(-1)">
-    
-    <script src="js/archivo_externo.js" defer></script>
+    <p>...contenido previo script...</p>
 
-    <script>
-        window.alert("Hola mundo...\n") 
-        //document.write("\n" + new Date())
-    </script>
+    <script defer src="https://javascript.info/article/script-async-defer/long.js?speed=1"></script>
+
+    <!-- Inmediatamete visible -->
+    <p>...contenido posterior al script...</p>
 </body>
 </html>

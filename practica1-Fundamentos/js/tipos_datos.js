@@ -9,6 +9,11 @@ document.write('Valor: ' + tipoTexto + ', Tipo: ' + typeof(tipoTexto) + '<br>');
 document.write('Valor: ' + tipoTexto2 + ', Tipo: ' + typeof(tipoTexto2) + '<br>');
 document.write('Valor: ' + tipoBoolean + ', Tipo: ' + typeof(tipoBoolean) + '<br>');
 
+console.log( typeof(tipoNumero));
+console.log(typeof(tipoTexto));
+console.log(typeof(tipoTexto2));
+console.log(typeof(tipoBoolean));
+
 //Cambio de tipo de dato dentro de una misma variable
 tipoNumero = '34';
 document.write('Valor: ' + tipoNumero + ', Tipo: ' + typeof(tipoNumero) + '<br>' );

@@ -3,7 +3,7 @@ document.write('<h5>OPERADOR TERNARIO</h5>')
 cadenaCorta = 'Iron Maiden'
 cadenaLarga = 'Metallica'
 document.write('¿Qué cadena es más larga?: <b>' + cadenaCorta + '</b> ó <b>' + cadenaLarga + '</b><br>')
-queCadenaMuestro = (cadenaCorta.length > cadenaLarga.length) ? cadenaCorta : cadenaLarga //muestra cadenaLarga
+queCadenaMuestro = (cadenaCorta.length > cadenaLarga.length) ? cadenaCorta : cadenaLarga //muestra cadenaCorta
 document.write(queCadenaMuestro + '<br>')
 
 //OPERADOR TYPEOF

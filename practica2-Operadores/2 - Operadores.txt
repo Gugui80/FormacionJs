@@ -3,7 +3,7 @@ Los operadores sirven para hacer los cálculos y operaciones necesarios para lle
 Tipos de operadores:
 
 1)ARITMÉTICOS => [ejercicio1.html]
-+ Suma de dos valores. En el caso de que algún valor sea una cadena de texto, este operador concatena ambos valore.
++ Suma de dos valores. En el caso de que algún valor sea una cadena de texto, este operador concatena ambos valores.
 - Resta de dos valores, también puede utilizarse para cambiar el signo de un número si lo utilizamos con un solo operando -23
 * Multiplicación de dos valores
 / División de dos valores
@@ -27,7 +27,8 @@ Tipos de operadores:
 4)CONDICIONALES => [ejercicio1.html]
 == Comprueba si dos valores son iguales (Los dobles iguales no comprueban el tipo de dato variable/valor mientras se hace la comparación)
 != Comprueba si dos valores son distintos
-=== Comprueba si dos valores son iguales (Triple igual comprueba el tipo de datos de una variable durante la comparación)
+=== Comprueba si dos valores son iguales (igual comprueba el tipo de datos de una variable durante la comparación)
+!== Comprueba si dos valores son distintos (comprueba el tipo de datos de una variable durante la comparación)
 > Mayor que, devuelve true si el primer operando es mayor que el segundo
 < Menor que, es true cuando el elemento de la izquierda es menor que el de la derecha
 >= Mayor igual
@@ -39,3 +40,7 @@ expresión_condicional ? expresion1 : expresion2;
 
 6)TYPEOF => [ejercicio2.html] (Devuelve una cadena de texto que describe el tipo del operador que estamos comprobando)
 typeof expresion1
+
+CONVERSIÓN DE TIPOS
+JavaScrip hace una conversión implícita y automática de tipos, al utilizar operadores entre las variables. Esto puede dar lugar a comportamientos impredecibles.
+Para tener control sobre ello, en muchas ocasiones debemos hacer una conversión explícita, utilizando funciones como parseInt() ó isNan().

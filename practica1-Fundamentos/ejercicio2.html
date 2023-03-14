@@ -16,6 +16,10 @@
       function anunciarPasadas() {
         pasadas = pasadas + 1;
         alert('Has pasado el ratón encima ' + pasadas + ' veces');
+        console.log('SOy console.log');
+        if(pasadas == 3){
+          console.error('Te estas pasando')
+        }
       } 
       document.getElementById('mielemento').addEventListener('mouseenter', anunciarPasadas);
     </script>
