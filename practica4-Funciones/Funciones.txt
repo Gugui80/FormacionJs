@@ -29,6 +29,21 @@ function nombreFuncion (parametroA, parametroB ...){
    ... 
 }
 
+VALORES POR DEFECTO
+Es posible asignar valores por defecto a algun/os parámetro/s recibidos por una función, otorgando un valor en el momento de la declaración de la función.
+
+function nombreFuncion (parametroA, parametroB = val1){ 
+   instrucciones de la función 
+   ... 
+}
+
+arrowFuntion = (parametroA, parametroB = val1) => {
+   instrucciones de la función 
+   ... 
+}
+
+Cuando invoquemos esta función, el segundo parámetro tomará val1 como valor, salvo que lo pasemos explícitamente en la llamada.
+
 SENTENCIA RETURN => [ejercicio2.html]
 Para especificar el valor que retornará la función se utiliza la palabra return seguida de el valor que se desea devolver. Es la salida de la función. A las funciones que 
 tienen sentencia return se las conoce como funciones propiamente dichas. A las que carecen de esta sentencia se las conoce como procedimientos, aunque se definan e invoquen de la 
@@ -59,9 +74,18 @@ Hace exatamente lo opuesto a la función escape.
 isNaN(número)
 Devuelve un boleano dependiendo de lo que recibe por parámetro. Si no es un número devuelve un true, si es un numero devuelve false.
 
+encodeURI() //Buscar info encodeURIComponent()
+Se encarga de transformar todos los carácteres especiales de una cadena, a UTF-8. Función muy útil para verificar y sanitizar posibles URL, o datos en cookies o peticiones HTTP
+que no permiten espacios en blanco sin codificar, ya que provocarían un error.
+
+decodeURI() //Buscar info decodeURIComponent()
+Realiza la operación inversa a encodeURI, descodificndo la secuencias de escape de UTF-8.
+
 ARROW FUNCTIONS
-Desde hace algunos años, la manera de definir funciones ha sido mejorada. Se pueden definir e invocar de la siguiente forma:
+Desde hace algunos años y la llegada del ECMAScript 6, la manera de definir funciones ha sido mejorada. Se pueden definir e invocar de la siguiente forma:
 
 let miFuncion = (param1, param2) => {
    //Codigo a ejecutar en la funcion.
 }
+
+miFuncion(val1, val2)

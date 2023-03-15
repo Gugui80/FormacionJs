@@ -33,8 +33,8 @@ o guión bajo (_) y el carácter dólar $. Hay que evitar utilizar nombres reser
 Hay 3 formas de declarar variables en JS:
 var => pueden ser inicializadas, re-declaradas y modificadas a lo largo de la ejecución.
 let => pueden ser inicializadas y modificadas a lo largo de la ejecución. No pueden ser re-declaradas.
-const => DEBEN ser inicializadas. No puedenn re-declaradas ni modificadas a lo largo de la ejecución.
-Sin palabra reservada.
+const => DEBEN ser inicializadas. No pueden re-declaradas ni modificadas a lo largo de la ejecución.
+Sin palabra reservada: IMPORTANTE  => Si declaramos una variable de esta forma, JavaScript la tomará siempre como variable global.
 (let y const existen desde el ES6(ECMAScript6).)
 
 Ámbito de una variable => [ejercicio5.html]

@@ -38,7 +38,7 @@ document.write('</table>');
  * Manejo del objeto THIS
  */
 function thisGlobal() {
-    alert(this); 
+    console.log(this); 
 }
 
 thisGlobal(); //Muestra: [object Window]

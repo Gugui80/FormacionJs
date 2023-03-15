@@ -42,3 +42,5 @@ MÉTODOS DEL OBJETO ARRAYS
 23)flat() : Crea una nuevo array con todos los elementos de sub-array concatenados recursivamente hasta la profundidad especificada.
 24)isArray() : Determina si el valor pasado es un Array.
 25)from() : Crea una nueva instancia de Array a partir de un objeto iterable.
+
+OBJETO MAP

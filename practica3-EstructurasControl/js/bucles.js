@@ -1,13 +1,13 @@
 //BUCLE FOR
 document.write('Bucle FOR:')
-for (i=1;i<=6;i++) { 
+for (var i = 1;i <= 6;i++) { 
     document.write('<h' + i + '>Encabezado de nivel ' + i + '</h' + i + '>') 
 }
 
 //BUCLE WHILE
 var color = "" 
-while (color != "rojo"){ 
-   	color = prompt("dame un color (escribe rojo para salir)","") 
+while (color != "rojo") { 
+   	color = prompt("Dame un color (escribe rojo para salir)","") 
 }
 
 /**
