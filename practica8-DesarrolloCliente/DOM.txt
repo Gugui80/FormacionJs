@@ -61,6 +61,12 @@ fucntion manejadorEvento(event) {
     //Sentencias que utilizan el objeto event
 }
 
+OBJETO HISTORY
+https://developer.mozilla.org/es/docs/Web/API/History_API
+
+OBJETO LOCATION
+https://developer.mozilla.org/es/docs/Web/API/Location
+
 FRAGMENTOS - LA ANTESALA DE LOS WEB COMPONENTS (Se ha decidido explicar esta parte con la documentación de la web lenguajejs.com)
 https://lenguajejs.com/javascript/dom/crear-elementos-dom/
 
