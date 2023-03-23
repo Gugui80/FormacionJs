@@ -51,3 +51,41 @@ MÉTODOS DEL OBJETO ARRAYS
 25)from() : Crea una nueva instancia de Array a partir de un objeto iterable.
 
 OBJETO MAP
+Este objeto se desarrolló para el ECMAScript6, y presenta una colección de claves y valores, que pueden ser de cualquiera de los tipos que permite Javascript.
+Para instanciarlo:
+
+var primerMap = new Map(iterable);
+
+Tiene una única propiedad, la propiedad size que nos dice el número de elementos contenidos en la colección.
+
+primerMap.size
+
+MÉTODOS MAP
+set( key, value ) : añadir una nueva pareja clave-valor
+get( key ) : obtener el valor asociado a una clave
+delete( key ) : borrar una pareja clave-valor por medio de la clave.
+has( key ) : comprobar si hay una determinada clave en el mapa.
+clear(): Elimina todos los elementos de la colección.
+keys() : Devuelve un iterador con todas las claves de la colección.
+values() : Devuelve un iterador con todos los valores de la colección.
+forEach(): Mismo fucnionamiento que en el objeto Array.
+
+OBJETO SET
+Este objeto también se desarrolló para el ECMAScript6, y presenta una colección valores, que pueden ser de cualquiera de los tipoe que permite Javascript, con la
+particularidad de garantizar que esos valores han de ser únicos (no permite repetidos).
+Para instanciarlo:
+
+var primerSet = new Set(iterable);
+
+Tiene una única propiedad, la propiedad size que nos dice el número de elementos contenidos en la colección.
+
+primerSet.size
+
+MÉTODOS MAP
+add( value ) : añade un nuevo valor. Si ese valor existe, no lo añadirá.
+delete( value ) : borrar una pareja clave-valor por medio de la clave.
+has( value ) : comprobar si existe el valor en el mapa.
+clear(): Elimina todos los elementos de la colección.
+values() : Devuelve un iterador con todos los valores de la colección.
+forEach(): Mismo fucnionamiento que en el objeto Array.
+
