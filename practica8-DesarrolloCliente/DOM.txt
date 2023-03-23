@@ -16,7 +16,6 @@ métodos, muchos de ellos con una tasa muy baja de utilización en proyectos rea
 1)Atributos: https://desarrolloweb.com/articulos/826.php
 2)Métodos: https://desarrolloweb.com/articulos/827.php
 
-IMPORTANTE: 
 OBJETO DOCUMENT => [ejercicio3.html]
 Con el objeto document se controla la página web y todos los elementos que contiene. El objeto document es la página actual que se está visualizando en ese momento. 
 Depende del objeto window, pero también puede depender del objeto frame en caso de que la página se está mostrando en un frame. 
@@ -44,9 +43,25 @@ getAttributeNode(attr): Idem a getAttribute() pero devuelve el atributo como nod
 removeAttributeNode(attr): Idem a removeAttribute() pero devuelve el atributo como nodo.
 setAttributeNode(attr, value): Idem a setAttribute() pero devuelve el atributo como nodo.
 
+EVENTOS
+A las acciones que puede llevar a cabo un usuario al interactuar con una aplicación web se las denomina eventos. JavaScript es capaz de detectar estos eventos
+y, a la vez, asociarles un instrucciones que se ejecutarán cuando estos eventos se disparan. A estas funciones se las denomina manejadoras de eventos, y se diferencias de
+otras funciones por ir precedidas de la palabra "on".
+
+Listado de eventos disponibles en javascript: https://desarrolloweb.com/articulos/1236.php
+
+Para asociar manejadores de eventos disponemos de formas de implementarlo:
+-Como un atributo HTML del elemento.
+-A través de una propiedad JavaScript del objeto que representa el elemento.
+
+Objeto Event: Cuando se produce un evento se crea automáticamente un objeto event con información sobre el mismo. Este objeto es accesible únicamente
+desde kas funciones asignadas en los manejadores y aparece automáticamente en los parámetros.
+
+fucntion manejadorEvento(event) {
+    //Sentencias que utilizan el objeto event
+}
+
 FRAGMENTOS - LA ANTESALA DE LOS WEB COMPONENTS (Se ha decidido explicar esta parte con la documentación de la web lenguajejs.com)
 https://lenguajejs.com/javascript/dom/crear-elementos-dom/
-
-EVENTOS
 
 
