@@ -50,4 +50,12 @@ for (i = 0; i < temperaturas_ciudades.length; i++) {
 } 
 document.write("</table>");
 
+/**
+ * Operador de propagación
+ */
+let colores = new Array('azul', 'amarillo', 'rojo', 'verde');
+console.log(colores);
+
+let copiaColores = new Array(...colores);
+console.log(copiaColores);//Almacena el mismo contenido que el array colores.
 

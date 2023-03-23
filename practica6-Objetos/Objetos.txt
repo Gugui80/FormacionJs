@@ -55,6 +55,6 @@ Date, para el trabajo con fechas. => https://desarrolloweb.com/articulos/clase-d
 Math, para realizar funciones matemáticas. => https://desarrolloweb.com/articulos/762.php
 Number, para realizar algunas cosas con números => https://desarrolloweb.com/articulos/778.php
 Boolean, trabajo con boleanos. => https://desarrolloweb.com/articulos/777.php
-JSON, Javascript Object nOTATION => https://lenguajejs.com/javascript/objetos/json/
+JSON, Javascript Object Notation => https://lenguajejs.com/javascript/objetos/json/
 Array, los vamos a ver en la siguiente práctica.
 RegExp, que sirve para construir patrones.

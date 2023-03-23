@@ -16,6 +16,13 @@ sin corchetes ni paréntesis, seguido de un punto y la palabra length.
 
 primerArray.length;
 
+OPERADOR DE PROPAGACION
+Se define escribiendo 3 puntos "..." delante de la varible sobre la que se quiere aplicar (...miVariable) y equivale a expandir los elementos de dicha variable en aquellas
+situaciones donde se esperan varios elementos, es decir, sería como escribir uno a uno cada elmento del iterable. La sintaxis sería la siguiente:
+
+var miArray = [val1, val2, val3]
+var arrayCopiaMiArray = ...miArray
+
 MÉTODOS DEL OBJETO ARRAYS
 1)map() : Permite recorrer el array y modificar los elementos presentes en él, retornando un nuevo array con la misma longitud que el original.
 2)filter() : Recorre el array y retorna un nuevo array con aquellos elementos que pasen una determinada condición.
