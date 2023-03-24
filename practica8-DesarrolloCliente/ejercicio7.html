@@ -1,0 +1,20 @@
+<!--En este ejemplo se ejecutaría primero el evento del enlace, seguido del evento del párrafo, 
+    seguido del evento del body y por último el evento del documento html.
+    Al pulsar el botón, podremos ver en la concola del navegador, el resultado jerárquico del burbujeo de eventos de la función evento-->
+<!--DOM 7-->
+<!DOCTYPE html>
+<html lang="es" onclick="evento()">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../styles.css">
+        <title>dom</title>
+    </head>
+    <body onclick="evento()">
+        <h1>Práctica 8: Burbujeo de eventos</h1>
+        <p onclick="evento()"> 
+            <a href="#" onclick="evento()">Dispara el evento</a>
+        </p>
+    </body>       
+</html>

@@ -61,6 +61,12 @@ fucntion manejadorEvento(event) {
     //Sentencias que utilizan el objeto event
 }
 
+El flujo de eventos establece el orden en que se ejecutan. 2 tipos principales:
+Event bubbling: En este modelo de flujo de eventos se produce primero el evento en el elemento más interno de la estructura de árbol y va subiendo jerárquicamente hasta llegar al nodo raíz.
+
+Event capturing:En este modelo de flujo de eventos se produce primero el evento del elemento más externo de la estructura de árbol y va bajando jerárquicamente hasta llegar al elemento más interno.
+El flujo de eventos del DOM: El flujo de eventos definido en el estandar del DOM soporta los dos modelos anteriores, pero el event capturing se ejecuta en primer lugar, seguido del event bubbling.
+
 OBJETO HISTORY
 https://developer.mozilla.org/es/docs/Web/API/History_API
 
