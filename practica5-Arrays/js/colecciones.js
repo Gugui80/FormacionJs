@@ -49,6 +49,7 @@ console.log( tercerMap.has(obj1) );//Muestra true
 console.log( tercerMap.has(obj2) );//Muestra false
 
 //Iteraciones sobre MAP
+//Para inicializar los mapas con datos, se introduce como parámetro un array de entradas (un array de arrays).
 const cuartoMap = new Map( [ [0, "zero"], [1, "one"], [2, "two"] ] );
  
 for (var [key, value] of cuartoMap) {
@@ -64,8 +65,8 @@ const objSet1 = {
 };
  
 const objSet2 = {
-    a: 1,
-    b: 2
+    a: 3,
+    b: 4
 };
  
 var primerSet = new Set();

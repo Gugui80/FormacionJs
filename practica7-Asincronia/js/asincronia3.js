@@ -15,4 +15,4 @@ myPromise
         console.log(result)
     });
 
-//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.
+//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.+

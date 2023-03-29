@@ -17,15 +17,18 @@ setTimeout(mensaje, 1500, 34);
 //Averiguar en que orden de ejecución se mostrarán los mensajes de todo el script.
 
 let x = 1;
+
 setTimeout( function() {
   x = 3;
   console.log(x);
   x = 20;
 }, 100);
+
 setTimeout( function() {
   x +=10;
   console.log(x);
 }, 10);
+
 setTimeout( function() {
   console.log(x);
 }, 1);
