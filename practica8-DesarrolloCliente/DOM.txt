@@ -11,14 +11,15 @@ de una manera u otra accediendo a esa jerarquía.
 
 OBJETO WINDOW => [ejercicio2.html]
 Es el objeto principal en la jerarquía y contiene las propiedades y métodos para controlar la ventana del navegador. De él dependen todos los demás objetos de la jerarquía. 
-Vamos a ver la lista de sus propiedades y métodos más utilizados (Para no hacer este documento inñutilmente largo, y dado que el objeto window tiene multitud de atributos y
+Vamos a ver la lista de sus propiedades y métodos más utilizados (Para no hacer este documento inútilmente largo, y dado que el objeto window tiene multitud de atributos y
 métodos, muchos de ellos con una tasa muy baja de utilización en proyectos reales, dejaremos 2 links con las referencias a los listados de los mismos):
 1)Atributos: https://desarrolloweb.com/articulos/826.php
 2)Métodos: https://desarrolloweb.com/articulos/827.php
 
 OBJETO DOCUMENT => [ejercicio3.html]
 Con el objeto document se controla la página web y todos los elementos que contiene. El objeto document es la página actual que se está visualizando en ese momento. 
-Depende del objeto window, pero también puede depender del objeto frame en caso de que la página se está mostrando en un frame. 
+Depende del objeto window, pero también puede depender del objeto frame en caso de que la página se está mostrando en un frame.
+
 Métodos más utilizados del objeto DOCUMENT:
 addEventListener(event, callback): Permite añadir un manejador a cualquier evento del navegador que tenga definido la etiqueta html en cuestión.
 getElementById(id): Busca el elemento HTML con el id id. Si no lo encuentra devuelve NULL.
@@ -26,7 +27,7 @@ getElementsByClassName(class): Busca elementos con la clase class. Si no lo encu
 getElementsByName(name): Busca elementos con atributo name name. Si no lo encuentra devuelve [].
 getElementsByTagName(tag): Busca elementos tag. Si no encuentra devuelve [].
 querySelector(sel): Busca el primer elemento que coincide con el selector CSS sel. Si no lo encuentra devuelve null.
-querySelectorAll(sel)	Busca todos los elementos que coinciden con el selector CSS sel. Si no lo encuentra [].
+querySelectorAll(sel): Busca todos los elementos que coinciden con el selector CSS sel. Si no lo encuentra [].
 createElement(tag, options): Crea y devuelve el elemento HTML definido por el tag.
 appendChild(node): Añade como hijo el nodo node. Devuelve el nodo insertado.
 textContent: Devuelve el contenido de texto del elemento. Se puede asignar para modificar.
