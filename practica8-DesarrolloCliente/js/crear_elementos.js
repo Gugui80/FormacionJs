@@ -2,7 +2,7 @@
 let container = document.createElement('div');
 container.setAttribute('class', 'example_container');
 container.id = 'main_container';
-//container.data-example = 'example'; Porque falla esta sentencia?
+//container.data-example = 'example';// Porque falla esta sentencia?
 container.setAttribute('data-example', 'example');
 
 document.body.appendChild(container);//Anclamos el elemento al DOM. Si inspeccionamos veremos nuestro nuevo elemento.
@@ -14,4 +14,3 @@ imgExample.src = 'img/logo.png'; //Ojo con la ruta de la imagen. Hay que referen
 imgExample.alt = 'Primera imagen generada en el DOM';
 
 container.appendChild(imgExample);
-

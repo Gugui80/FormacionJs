@@ -39,6 +39,10 @@ temperaturas_medias_ciudad2[0] = 10;
 temperaturas_medias_ciudad2[1] = 8;
 temperaturas_medias_ciudad2[2] = 10;
 
+console.log(temperaturas_medias_ciudad0)
+console.log(temperaturas_medias_ciudad1)
+console.log(temperaturas_medias_ciudad2)
+
 /**
  * Con las anteriores líneas hemos creado tres arrays de 1 dimensión y tres elementos, como los que ya conocíamos. Ahora crearemos un nuevo array de tres elementos, 
  *  instanciando con la palabra reservada NEW, e introduciremos dentro de cada una de sus casillas los arrays creados anteriormente, con lo que tendremos un array de arrays, 
@@ -48,6 +52,8 @@ var temperaturas_ciudades = new Array (3);
 temperaturas_ciudades[0] = temperaturas_medias_ciudad0;
 temperaturas_ciudades[1] = temperaturas_medias_ciudad1;
 temperaturas_ciudades[2] = temperaturas_medias_ciudad2;
+
+console.log(temperaturas_ciudades)
 
 document.write('<h4>Temperaturas medias por ciudades:</h4>');
 document.write("<table width=200 border=1 cellpadding=1 cellspacing=1>"); //Creamos una tabla para pintar los resultados.

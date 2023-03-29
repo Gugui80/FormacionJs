@@ -1,9 +1,7 @@
-<!--En este ejemplo se ejecutaría primero el evento del enlace, seguido del evento del párrafo, 
-    seguido del evento del body y por último el evento del documento html.
-    Al pulsar el botón, podremos ver en la concola del navegador, el resultado jerárquico del burbujeo de eventos de la función evento-->
 <!--DOM 7-->
+
 <!DOCTYPE html>
-<html lang="es" onclick="evento()">
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +9,23 @@
         <link rel="stylesheet" href="../styles.css">
         <title>dom</title>
     </head>
-    <body onclick="evento()">
-        <h1>Práctica 8: Burbujeo de eventos</h1>
-        <p onclick="evento()"> 
-            <a href="#" onclick="evento()">Dispara el evento</a>
-        </p>
-    </body>       
+    <body>
+        <h1>Práctica 8: AddEventListener</h1>
+        <form id="formularioEventListener">
+            <input type="button" id="boton1" name="botonId1" value="Visualizar identificador" style="padding-bottom: 5px;margin-bottom: 5px;"/>
+            <br>
+
+            <label for="cars">Elige un coche:</label>
+            <select name="cars" id="cars">
+                <option value="renault">Renault</option>
+                <option value="peugeot">Peugeot</option>
+                <option value="seat">Seat</option>
+                <option value="opel">Opel</option>
+            </select>
+        </form>
+        <div class="contenedorResultados">
+
+        </div>
+        <script src="js/addeventlistener.js"></script>
+    </body>
 </html>

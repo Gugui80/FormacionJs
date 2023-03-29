@@ -14,7 +14,7 @@ document.write('<p>Método FILTER => [' + arrayData.filter(element => element % 
 //FOREACH
 document.write('<p>Método FOREACH => [');
 arrayData.forEach((element, i) => {
-    document.write(element + (i < arrayData.length -1? ',': ''));
+    document.write(element + (i < arrayData.length - 1 ? ',': ''));
 });
 document.write(']</p>'); //[1,2,3,4,5,6]
 
@@ -22,7 +22,7 @@ document.write(']</p>'); //[1,2,3,4,5,6]
 document.write('<p>Método FIND => [' + arrayData.find(element => element > 5) + ']</p>'); //[6]
 
 //SORT
-document.write('<p>Método SORT => [' + arrayText.sort((elem1, elem2) => elem1 > elem2? -1 : 1) + ']</p>'); //[MRR, IGAE, División 5, COFFEE]
+document.write('<p>Método SORT => [' + arrayText.sort((elem1, elem2) => elem1 > elem2 ? -1 : 1) + ']</p>'); //[MRR, IGAE, División 5, COFFEE]
 
 //SOME
 document.write('<p>Método SOME => [' + arrayData.some(element => element > 6) + ']</p>'); //[false]
@@ -34,13 +34,14 @@ document.write('<p>Método EVERY => [' + arrayData.every(element => element < 7)
 document.write('<p>Método CONCAT => [' + arrayData.concat(arrayText) + ']</p>'); //[1,2,3,4,5,6,IGAE,División 5,MRR,COFFEE]
 
 //INCLUDES
+arrayText = ['IGAE','División 5','MRR','COFFEE']; //Reinicializamos el array, para mantener el orden inicial
 document.write('<p>Método INCLUDES => [' + arrayText.includes('MRR') + ']</p>'); //[true]
 
 //JOIN
 document.write('<p>Método JOIN => [' + arrayData.join('-') + ']</p>'); //[1-2-3-4-5-6]
 
 //REDUCE
-document.write('<p>Método REDUCE => [' + arrayData.reduce((acumulador,valorActual) => acumulador + valorActual) + ']</p>'); //[21]
+document.write('<p>Método REDUCE => [' + arrayData.reduce((acumulador, valorActual) => acumulador + valorActual) + ']</p>'); //[21]
 
 //INDEXOF
 arrayText = ['IGAE','División 5','MRR','COFFEE']; //Reinicializamos el array, para mantener el orden inicial
@@ -50,7 +51,7 @@ document.write('<p>Método INDEXOF => [' + arrayText.indexOf('MRR') + ']</p>'); 
 document.write('<p>Método FINDINDEX => [' + arrayText.findIndex(element => element === 'Hacienda') + ']</p>'); //[-1]
 
 //FILL
-document.write('<p>Método FILL => [' + arrayData.fill(7, 3, 5) + ']</p>'); //[1,2,3,7,7,6]
+document.write('<p>Método FILL => [' + arrayData.fill('siete', 3, 5) + ']</p>'); //[1,2,3,'siete','siete',6]
 
 //PUSH
 arrayData = [1,2,3,4,5,6]; //Reinicializamos el array, para mantener el orden inicial
@@ -62,7 +63,7 @@ arrayData.pop();
 document.write('<p>Método POP => [' + arrayData + ']</p>'); //[1,2,3,4,5,6]
 
 //SHIFT
-arrayText.shift();
+arrayText.shift(); //Borra el elemento IGAE
 document.write('<p>Método SHIFT => [' + arrayText + ']</p>'); //[División 5,MRR,COFFEE]
 
 //UNSHIFT
@@ -116,19 +117,21 @@ let people = [
       age: 10,
     },
   ];
-  people.sort( (a, b) => {
-    if(a.age < b.age) {
-      return -1;
-    }
-    if(a.age > b.age) {
-      return 1;
-    }
-    if (a.name.toLowerCase() < b.name.toLowerCase()) {
-      return -1;
-    }
-    if (a.name.toLowerCase() > b.name.toLowerCase()) {
-      return 1;
-    }
-    return 0;
-  });
-  console.log(people);
+
+people.sort( (a, b) => {
+  if(a.age < b.age) {
+    return -1;
+  }
+  if(a.age > b.age) {
+    return 1;
+  }
+  if (a.name.toLowerCase() < b.name.toLowerCase()) {
+    return -1;
+  }
+  if (a.name.toLowerCase() > b.name.toLowerCase()) {
+    return 1;
+  }
+  return 0;
+});
+
+console.log(people);
