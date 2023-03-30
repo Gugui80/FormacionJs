@@ -26,3 +26,7 @@ FUNDAMENTOS
 DESARROLLO DEL LADO DEL CLIENTE
 
 ASINCRONIA
+
+* Sesion 1. https://vimeo.com/808109886
+* Sesion 2. https://vimeo.com/808374762
+* Sesion 3. https://vimeo.com/812555631
