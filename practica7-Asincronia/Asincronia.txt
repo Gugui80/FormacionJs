@@ -5,7 +5,7 @@ En Javascript tenemos únicamente un único hilo de ejecución de los programas.
 aunque solo tenga un hilo de ejecución. En Javascript hay que gestionar la asincronía, para realizar tareas tan comunes como el acceso a las bases de datos, o el acceso al 
 sistema de archivos en el lenguaje NodeJS o para realizar consultas a servicios web o APIs desde el navegador con Ajax, por poner algunos ejemplos.
 
-SETTIMEOUT => [ejercicio2.html]
+SETTIMEOUT => [ejercicio1.html]
 Una función con código a ejecutar(Estas funciones que se pasan como parámetro a otras funciones, se denominan callbacks, y es uno de los mecanismos que tenemos para manejar la
 asincronía).
 Los milisegundos que deben de pasar hasta que se ejecute la función del primer parámetro.
@@ -14,7 +14,7 @@ setTimeout( function() {
   //Código a ejecutar
 }, numMiliSegundos);
 
-PROMESAS => [ejercicio3.html]
+PROMESAS => [ejercicio2.html]
 Las promesas son herramientas un poco más avanzadas para organizar el código de las funciones asíncronas. Permiten de manera centralizada especificar qué queremos hacer 
 cuando un proceso asíncrono se ha ejecutado correctamente y lo que se debería hacer cuando el proceso asíncrono ha resultado en una situación de error.
 Las promesas se pueden ver como objetos que te devuelven los procesos asíncronos. Cuando un proceso asíncrono funciona devolviendo promesas, en lugar de alimentarlo con una 
@@ -34,7 +34,7 @@ myPromise
 
 NOTA: Para obtener información de todos los métodos que tiene el objeto Promise => https://lenguajejs.com/javascript/asincronia/promise-api/
 
-ASYNC AWAIT => [ejercicio1.html]
+ASYNC AWAIT => [ejercicio3.html]
 Para usar Async Await simplemente debemos marcar una función como asíncrona (con async) y entonces en ella podemos usar la palabra "await" cada vez que necesitemos esperar 
 que se resuelva un proceso asíncrono. Es lo que se denomina azúcar sintáctico para gestionar las promesas de una forma más sencilla.
 

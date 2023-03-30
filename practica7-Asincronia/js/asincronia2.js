@@ -1,31 +1,21 @@
-//MANEJO DE CALLBACKS
-setTimeout(() => {
-    console.log('Ejecución asíncrona de un callback')
-},3000);
+//PROMESAS
+const myPromise = fetch('https://jsonplaceholder.typicode.com/todos/5');
+console.log(myPromise); //Muestra un objeto de tipo Promise.
 
-//ORDEN DE EJECUCIÓN ENTRE CÓDIGO SÍNCRONO Y ASÍNCRONO
-setTimeout(() => console.log("Código asíncrono."), 2000);
-console.log("Código síncrono.");
+//Procesamos la respuesta de la llamada a la API mediante métodos estáticos del objeto Promise.
+Promise
+    .resolve(myPromise)
+    .then( response => {
+        console.log(response); //Muestra un objeto de tipo Response de Js.
+    })
+    .catch( error => {
+        console.log(error)
+    });
 
-//Si guardamos nuestro callback en una variable:
-const mensaje = (contador) => { 
-    console.warn('Ejecución número: ' + contador + ' de la función.'); 
-};
+//Acabamos de envolver una promesa dentro de otra, cosa no necesaria. Realmente podríamos haber hecho, directamente:
+myPromise
+    .then( result => {
+        console.log(result)
+    });
 
-setTimeout(mensaje, 1500, 34);
-
-//Averiguar en que orden de ejecución se mostrarán los mensajes de todo el script.
-
-let x = 1;
-setTimeout( function() {
-  x = 3;
-  console.log(x);
-  x = 20;
-}, 100);
-setTimeout( function() {
-  x +=10;
-  console.log(x);
-}, 10);
-setTimeout( function() {
-  console.log(x);
-}, 1);
+//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.+

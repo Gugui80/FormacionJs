@@ -1,18 +1,19 @@
-//PROMESAS
-const myPromise = fetch('https://jsonplaceholder.typicode.com/todos/5');
-console.log(myPromise); //Muestra un objeto de tipo Promise.
+//ASYNC AWAIT
+async function funcionAsincrona() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/5'); //Invocamos una API externa
+    const json = await response.json();
 
-//Procesamos la respuesta de la llamada a la API mediante métodos estáticos del objeto Promise.
-Promise
-    .resolve(myPromise)
-    .then( response => {
-        console.log(response); //Muestra un objeto de tipo Response de Js.
-    });
+    document.write('Llamada a la URL: <b>https://jsonplaceholder.typicode.com/todos/5</b> (Consulta la pestaña NETWORK en la consola del navegador.)<br>');
+    document.write('Código HTTP de respuesta:<strong>' + response.status + '</strong><br>');
+    document.write('Objeto respuesta: <strong>{ ');
+    for(objectParse in json) {
+        document.write(objectParse + ':' + json[objectParse] + ', ');
+    }
+    document.write('}</strong>');
+    console.log(json); //Muestra: {userId: 1, id: 6, title: 'qui ullam ratione quibusdam voluptatem quia omnis', completed: false}
+}
 
-//Acabamos de envolver una promesa dentro de otra, cosa no necesaria. Realmente podríamos haber hecho, directamente:
-myPromise
-    .then( result => {
-        console.log(result)
-    });
-
-//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.
+//Vinculamos la llamada a la función asíncrona al evento onClick del botón de la página.
+document.getElementById('llamarUrl').onclick = function() {
+    funcionAsincrona();
+}

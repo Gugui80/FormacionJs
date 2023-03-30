@@ -69,3 +69,7 @@ h5 {
 .display_error {
     background-color: coral;
 }
+
+.display-checked {
+    background-color: aquamarine;
+}

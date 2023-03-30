@@ -2,7 +2,7 @@
 /**
  * Repetimos el ejemplo de las temperaturas de las ciudades, inicializando de forma más corta y simple los arrays.
  */
-var temperaturas_ciudades = new Array(new Array (12,10,11), new Array(5,0,2),new Array(10,8,10));
+var temperaturas_ciudades = new Array(new Array (12,10,11), new Array(5,0,2), new Array(10,8,10));
 
 //Como podemos observar, en una única línea conseguimos lo que en 12 líneas del ejercicio anterior.
 document.write('<h4>Arrays bidimensionales:</h4>');
@@ -20,7 +20,7 @@ document.write("</table>");
 /**
  * Repetimos el ejemplo de las temperaturas de las ciudades, utilizando la potencia de Javascript para almacenar datos de distinto tipo en un mismo array..
  */
-temperaturas_ciudades = new Array(new Array ('Madrid',12,10,11), new Array('Santander',5,0,2),new Array('Badajoz',10,8,10));
+temperaturas_ciudades = new Array(new Array ('Madrid',12,10,11), new Array('Santander',5,0,2), new Array('Badajoz',10,8,10));
 
 //Como podemos observar, en una única línea conseguimos lo que en 12 líneas del ejercicio anterior.
 document.write('<h4>Arrays que almacenan datos de distinto tipo:</h4>');
@@ -54,8 +54,15 @@ document.write("</table>");
  * Operador de propagación
  */
 let colores = new Array('azul', 'amarillo', 'rojo', 'verde');
-console.log(colores);
+console.log("ARRAY COLORES:" + colores);
 
 let copiaColores = new Array(...colores);
-console.log(copiaColores);//Almacena el mismo contenido que el array colores.
+let copiaColores2 = colores;
+console.log("ARRAY COPIACOLORES:" + copiaColores);//Almacena el mismo contenido que el array colores.
+
+console.log(copiaColores2);
+copiaColores2[0] = '1'; //Cambia el valor en el array colores
+console.log(colores);
+copiaColores[0] = '2';//No cambia el valor en el array colores
+console.log(colores);
 

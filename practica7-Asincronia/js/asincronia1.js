@@ -1,19 +1,34 @@
-//ASYNC AWAIT
-async function funcionAsincrona() {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos/5'); //Invocamos una API externa
-    const json = await response.json();
+//MANEJO DE CALLBACKS
+setTimeout(() => {
+    console.log('Ejecución asíncrona de un callback')
+},3000);
 
-    document.write('Llamada a la URL: <b>https://jsonplaceholder.typicode.com/todos/5</b> (Consulta la pestaña NETWORK en la consola del navegador.)<br>');
-    document.write('Código HTTP de respuesta:<strong>' + response.status + '</strong><br>');
-    document.write('Objeto respuesta: <strong>{ ');
-    for(objectParse in json) {
-        document.write(objectParse + ':' + json[objectParse] + ', ');
-    }
-    document.write('}</strong>');
-    console.log(json); //Muestra: {userId: 1, id: 6, title: 'qui ullam ratione quibusdam voluptatem quia omnis', completed: false}
-}
+//ORDEN DE EJECUCIÓN ENTRE CÓDIGO SÍNCRONO Y ASÍNCRONO
+setTimeout(() => console.log("Código asíncrono."), 2000);
+console.log("Código síncrono.");
 
-//Vinculamos la llamada a la función asíncrona al evento onClick del botón de la página.
-document.getElementById('llamarUrl').onclick = function() {
-    funcionAsincrona();
-}
+//Si guardamos nuestro callback en una variable:
+const mensaje = (contador) => { 
+    console.warn('Ejecución número: ' + contador + ' de la función.'); 
+};
+
+setTimeout(mensaje, 1500, 34);
+
+//Averiguar en que orden de ejecución se mostrarán los mensajes de todo el script.
+
+let x = 1;
+
+setTimeout( function() {
+  x = 3;
+  console.log(x);
+  x = 20;
+}, 100);
+
+setTimeout( function() {
+  x += 10;
+  console.log(x);
+}, 10);
+
+setTimeout( function() {
+  console.log(x);
+}, 1);

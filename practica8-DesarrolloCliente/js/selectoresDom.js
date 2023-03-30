@@ -6,7 +6,7 @@ actualizarValor = () => {
     let nombreUsuario2 = document.querySelector('#nombreUsuario');
     console.log(nombreUsuario2) //Muestra el elemento html.
 
-    //Vamos a utilizar esos selectores para crear elementtos en la página.
+    //Vamos a utilizar esos selectores para crear elementos en la página.
     let respuesta = document.querySelectorAll('.respuesta');
     console.log(respuesta);//Muestra el div que tiene esa clase, en un array de resultados de tipo NodeList.
     console.log(respuesta[0]);//Muestra el div que tiene esa clase.
