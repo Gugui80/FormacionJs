@@ -3,7 +3,7 @@ Significa que, a diferencia de la programación secuencial o síncrona, no se ti
 pueden aparecer en el código fuente en un orden y sin embargo se pueden llegar a ejecutar en otro orden distinto.
 En Javascript tenemos únicamente un único hilo de ejecución de los programas. Gracias a su característica no bloqueante, Javascript puede atender a muchas cosas a la vez, 
 aunque solo tenga un hilo de ejecución. En Javascript hay que gestionar la asincronía, para realizar tareas tan comunes como el acceso a las bases de datos, o el acceso al 
-sistema de archivos en el lenguaje NodeJS o para realizar consultas a servicios web o APIs desde el navegador con Ajax, por poner algunos ejemplos.
+sistema de archivos en el entorno de ejecución NodeJS o para realizar consultas a servicios web o APIs desde el navegador con Ajax, por poner algunos ejemplos.
 
 SETTIMEOUT => [ejercicio1.html]
 Una función con código a ejecutar(Estas funciones que se pasan como parámetro a otras funciones, se denominan callbacks, y es uno de los mecanismos que tenemos para manejar la
@@ -13,6 +13,8 @@ Los milisegundos que deben de pasar hasta que se ejecute la función del primer 
 setTimeout( function() {
   //Código a ejecutar
 }, numMiliSegundos);
+
+NOTA: Mirar función setInterval -> https://developer.mozilla.org/es/docs/Web/API/setInterval
 
 PROMESAS => [ejercicio2.html]
 Las promesas son herramientas un poco más avanzadas para organizar el código de las funciones asíncronas. Permiten de manera centralizada especificar qué queremos hacer 

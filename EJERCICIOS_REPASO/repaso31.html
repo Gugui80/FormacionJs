@@ -8,7 +8,27 @@
     <body>
         <script>
             //1)Mediante Promesas, invocar la URL de POKEMONS:  https://pokeapi.co/api/v2/pokemon/ditto y muestra el objeto de respuesta por consola.
+            const pokemonPromise = fetch('https://pokeapi.co/api/v2/pokemon/ditto');
             
+            pokemonPromise
+                .then(
+                    (resolve) => {
+                        const pokemonJson = resolve.json();
+                        
+                        pokemonJson
+                            .then(
+                                (data) => {
+                                    console.log(data);
+                                },
+                                (errorPokemonObject) => {
+                                    console.error(errorPokemonObject);
+                                }
+                            )
+                    },
+                    (reject) => {
+                        console.log(reject);
+                    }
+                )
             //2)Utiliza el método then para mostrar el json de respuesta.
         </script>
     </body>

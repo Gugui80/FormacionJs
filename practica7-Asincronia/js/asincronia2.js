@@ -14,8 +14,10 @@ Promise
 
 //Acabamos de envolver una promesa dentro de otra, cosa no necesaria. Realmente podríamos haber hecho, directamente:
 myPromise
-    .then( result => {
-        console.log(result)
+    .then( response => {
+        response
+            .json().then( data => console.log(data))
     });
 
-//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.+
+//Ejercicio: Mostrar por consola la respuesta json que hemos obtenido de la llamada a la API.
+

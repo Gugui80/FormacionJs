@@ -1,10 +1,12 @@
 //MANEJO DE CALLBACKS
-setTimeout(() => {
+setTimeout(
+  () => {
     console.log('Ejecución asíncrona de un callback')
-},3000);
+  }, 3000);
 
 //ORDEN DE EJECUCIÓN ENTRE CÓDIGO SÍNCRONO Y ASÍNCRONO
-setTimeout(() => console.log("Código asíncrono."), 2000);
+setTimeout( () => console.log("Código asíncrono."), 2000);
+
 console.log("Código síncrono.");
 
 //Si guardamos nuestro callback en una variable:
@@ -21,14 +23,13 @@ let x = 1;
 setTimeout( function() {
   x = 3;
   console.log(x);
-  x = 20;
 }, 100);
+
+setTimeout( function() {
+  console.log(x);
+}, 1);
 
 setTimeout( function() {
   x += 10;
   console.log(x);
 }, 10);
-
-setTimeout( function() {
-  console.log(x);
-}, 1);
