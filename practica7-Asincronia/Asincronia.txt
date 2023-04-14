@@ -15,6 +15,7 @@ setTimeout( function() {
 }, numMiliSegundos);
 
 NOTA: Mirar función setInterval -> https://developer.mozilla.org/es/docs/Web/API/setInterval
+IMPORTANTE: Motivos de tiempos de espera tardíos en el uso de SETTIMEOUT -> https://developer.mozilla.org/es/docs/Web/API/setTimeout#motivos_de_los_retrasos_superiores_a_los_especificados
 
 PROMESAS => [ejercicio2.html]
 Las promesas son herramientas un poco más avanzadas para organizar el código de las funciones asíncronas. Permiten de manera centralizada especificar qué queremos hacer 
