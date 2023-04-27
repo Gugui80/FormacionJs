@@ -36,3 +36,4 @@ ASINCRONIA
 * Sesion 7. https://vimeo.com/818838762
 * Sesion 8. https://vimeo.com/819790859
 * Sesion 9. https://vimeo.com/820965012
+* Sesion 10. https://vimeo.com/821708437
